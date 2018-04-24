@@ -10,13 +10,13 @@ import Foundation
 
 struct BlockHeader {
     let previousHash: String
-    let markleRoot: String
+    var merkleRoot: String
     let timestamp: Double
     let difficulty: Int
     var nonce: Int
     
     func getHash() -> String {
-        let header = previousHash + markleRoot + "\(Int(timestamp))\(difficulty)\(nonce)"
+        let header = previousHash + merkleRoot + "\(Int(timestamp))\(difficulty)\(nonce)"
         return header.sha256
     }
 }

@@ -12,4 +12,10 @@ struct Transaction {
     let sender: String
     let recipient: String
     let amount: Int
+    let timestamp: Double
+    
+    func getHash() -> String {
+        let str = sender + recipient + "\(amount)\(timestamp)"
+        return str.sha256
+    }
 }
