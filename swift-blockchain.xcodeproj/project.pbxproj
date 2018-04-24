@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D80610C6208ED5A100B3F88C /* BlockchainServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80610C5208ED5A100B3F88C /* BlockchainServer.swift */; };
 		D816D550208EBE8F00649F24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D816D54F208EBE8F00649F24 /* AppDelegate.swift */; };
 		D816D552208EBE8F00649F24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D816D551208EBE8F00649F24 /* ViewController.swift */; };
 		D816D555208EBE8F00649F24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D816D553208EBE8F00649F24 /* Main.storyboard */; };
 		D816D557208EBE8F00649F24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D816D556208EBE8F00649F24 /* Assets.xcassets */; };
 		D816D55A208EBE8F00649F24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D816D558208EBE8F00649F24 /* LaunchScreen.storyboard */; };
+		D8A0FDC0208EC9110050D63B /* Blockchain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0FDBF208EC9110050D63B /* Blockchain.swift */; };
+		D8A0FDC2208EC9310050D63B /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0FDC1208EC9310050D63B /* Block.swift */; };
+		D8A0FDC4208EC93D0050D63B /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0FDC3208EC93D0050D63B /* Transaction.swift */; };
+		D8A0FDC7208ECDDF0050D63B /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0FDC6208ECDDF0050D63B /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D80610C4208ED08800B3F88C /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		D80610C5208ED5A100B3F88C /* BlockchainServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainServer.swift; sourceTree = "<group>"; };
 		D816D54C208EBE8F00649F24 /* swift-blockchain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-blockchain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D816D54F208EBE8F00649F24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D816D551208EBE8F00649F24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,10 @@
 		D816D556208EBE8F00649F24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D816D559208EBE8F00649F24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D816D55B208EBE8F00649F24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8A0FDBF208EC9110050D63B /* Blockchain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blockchain.swift; sourceTree = "<group>"; };
+		D8A0FDC1208EC9310050D63B /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		D8A0FDC3208EC93D0050D63B /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		D8A0FDC6208ECDDF0050D63B /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +65,36 @@
 		D816D54E208EBE8F00649F24 /* swift-blockchain */ = {
 			isa = PBXGroup;
 			children = (
+				D8A0FDC5208ECDD10050D63B /* Extensions */,
+				D8A0FDBE208EC9010050D63B /* Sources */,
 				D816D54F208EBE8F00649F24 /* AppDelegate.swift */,
 				D816D551208EBE8F00649F24 /* ViewController.swift */,
 				D816D553208EBE8F00649F24 /* Main.storyboard */,
 				D816D556208EBE8F00649F24 /* Assets.xcassets */,
 				D816D558208EBE8F00649F24 /* LaunchScreen.storyboard */,
 				D816D55B208EBE8F00649F24 /* Info.plist */,
+				D80610C4208ED08800B3F88C /* Bridging-Header.h */,
 			);
 			path = "swift-blockchain";
+			sourceTree = "<group>";
+		};
+		D8A0FDBE208EC9010050D63B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D8A0FDBF208EC9110050D63B /* Blockchain.swift */,
+				D8A0FDC1208EC9310050D63B /* Block.swift */,
+				D8A0FDC3208EC93D0050D63B /* Transaction.swift */,
+				D80610C5208ED5A100B3F88C /* BlockchainServer.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D8A0FDC5208ECDD10050D63B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D8A0FDC6208ECDDF0050D63B /* String+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +170,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D816D552208EBE8F00649F24 /* ViewController.swift in Sources */,
+				D8A0FDC2208EC9310050D63B /* Block.swift in Sources */,
 				D816D550208EBE8F00649F24 /* AppDelegate.swift in Sources */,
+				D8A0FDC0208EC9110050D63B /* Blockchain.swift in Sources */,
+				D8A0FDC7208ECDDF0050D63B /* String+Extension.swift in Sources */,
+				D80610C6208ED5A100B3F88C /* BlockchainServer.swift in Sources */,
+				D8A0FDC4208EC93D0050D63B /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +317,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.chocovayashi.swift-blockchain";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/swift-blockchain/Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -293,6 +332,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.chocovayashi.swift-blockchain";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/swift-blockchain/Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
